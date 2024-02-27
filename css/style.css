@@ -160,6 +160,7 @@ margin-top: 15px;
     width: 250.33px ;
     Height : 124px
 }
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -276,13 +277,38 @@ margin-right: 10px;
     font-weight: bold;
   }
  
-  .activities-marseille p {
+  .activities-marseille h3 {
     margin-top: 40px;
-    margin-left: 27px;
+    margin-left: 30px;
     font-weight: bold;
   }
-  .activities-card{}
+  .activities-card{
+height: 431px;
+    width: 293px; 
+  border-radius: 20px ;
   
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+  }
+
+  .img-activities{
+ width: 293px ;
+ height: 380px;
+ border-radius: 20px, 20px, 0px, 0px;
+  }
+  .activities-card-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 32px;
+    margin-left: 19px;
+  }
+  
+  .card-activites-title{
+   margin-top: 10px;
+   margin-left: 10px;
+  }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
