@@ -372,8 +372,27 @@ height: 431px;
     margin-bottom: 5px;
 }
 
+ .footer {
+    margin-top:  70px;
+    display: flex;
+ }
+
+.a-propos-section{
+    background-color: #F2F2F2;
+    width: 446.67px;
+    height: 163px;
 
 
+}
+
+.text-footer{
+    margin-left: 20px;
+    margin-top: 20px;
+ 
+}
+.text-footer p {
+    margin-top: 10px; /* Espacement entre chaque paragraphe */
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -410,7 +429,7 @@ height: 431px;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+} 
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
