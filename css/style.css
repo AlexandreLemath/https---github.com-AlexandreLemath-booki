@@ -324,12 +324,12 @@ height: 431px;
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 871px;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 429px;
 }
 
 .populaires-title {
@@ -393,43 +393,89 @@ height: 431px;
 .text-footer p {
     margin-top: 10px; /* Espacement entre chaque paragraphe */
 }
+.button-filters-container  {
+    display: flex;
+}  
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+
+
+@media (max-width: 1460px) {
     .hebergements-and-populaires {
-        flex-direction: column;
+      flex-direction: column;
     }
-
-    .hebergements {
-        width: 100%;
-    }
-
+   .populaires-cards{
+    display: flex; 
+    gap: 25px;
+   }
     .populaires {
-        width: 100%;
-        margin-top: 50px;
+        margin-top: 40px;
+      order: 2; 
+      height: 252px;
+      width: 924px;
+     
+    } 
+    .card {
+       width:257px ; 
+       height: 136px;
+       border-radius: 20px
+;
+    }
+    .hebergements {
+         width: 924px;
+    }
+    .activities-card{
+        width: 206px;
+        height:308px
+      }
+    .img-activities{
+        
+            width: 212px;
+            height:241px
+          
     }
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    .filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+      }
+      .button-filters-container  {
+        margin-top: 10px;
+        margin-left: -18px;
 
-    .populaires-cards a {
-        width: 30%;
-    }
+    }  
+      .buttons-container {
+       
+        align-self : flex-end ;
 
-    .populaires-cards .card-title {
-        font-size: 14px;
+      }
+      
+   .information{
+    margin-top: 50px;
+   }
+   .a-propos-section{
+    width: 313.67px;
+   }   
+    
+    .main-container {
+        padding: 0 17%;
     }
+    .header{
+        width: 946px; 
+    
+     
+        
+    }
+    .footer{width: 930px;}
+  }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-} 
+
+  
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
