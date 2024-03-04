@@ -314,6 +314,7 @@ height: 431px;
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 54px;
 }
 
 .hebergements-and-populaires section {
@@ -326,12 +327,14 @@ height: 431px;
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    min-width:871px;
 }
 
-/****** Populaires ***********/
 .populaires {
     width: 31%;
+    min-width: 415px;
 }
+
 
 .populaires-title {
     display: flex;
@@ -382,7 +385,7 @@ height: 431px;
     background-color: #F2F2F2;
     width: 446.67px;
     height: 163px;
-
+  min-width:  446.67px;
 
 }
 
@@ -405,6 +408,9 @@ height: 431px;
 
 
 @media (max-width: 1024px) {
+    .body{
+        width: 100%;
+    }
     .hebergements-and-populaires {
       flex-direction: column;
     }
@@ -460,12 +466,11 @@ height: 431px;
     margin-top: 50px;
    }
    .a-propos-section{
-    width: 313.67px;
+    width: 320px;
+    min-width: 315px;
    }   
     
-    .main-container {
-        padding: 0 17%;
-    }
+   
     .header{
         width: 946px; 
     
@@ -480,4 +485,39 @@ height: 431px;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .body{
+        padding-bottom: 10px;
+    }
+    .logo{
+        height: 79px;
+        width: 121px;
+    }
+    .header {
+        width: 569px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        margin-bottom: 30px;
+    }
+    
+    .li-header{
+        font-size: 1.45rem;
+    }
+    .ul-header {
+        width: 100%;
+        display: flex;
+        gap: 67px;
+        margin: 1px auto; 
+        min-width: 359px;
+        padding: 0;
+        margin-right: 5px;
+        
+    }
+    
 }
