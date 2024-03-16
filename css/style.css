@@ -439,7 +439,7 @@ min-width: 362.45px;
 ;
     }
     .hebergements {
-         width: 924px;
+         width: 100%;
     }
     .activities-card{
         width: 206px;
@@ -460,7 +460,6 @@ min-width: 362.45px;
       }
       .button-filters-container  {
         margin-top: 10px;
-        margin-left: -18px;
 
     }  
       .buttons-container {
@@ -479,7 +478,7 @@ min-width: 362.45px;
     
    
     .header{
-        width: 946px; 
+        width: 100%; 
     
      
         
@@ -496,12 +495,16 @@ min-width: 362.45px;
         padding: 0;
       margin: 0    ;
     }
+    .body{width: 100%;}
+    .main{ width: 100%;}
+    
     .top-site{
         margin-left: 20px;
     }
     .logo{
         width:107px ;
-    height: 83px ;    
+    height: 83px ;  
+    margin-left: 50px;
     }
     .main-container {
         position: relative;
@@ -511,16 +514,17 @@ min-width: 362.45px;
         width: 100%;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin: 0;
         padding: 0;
-        padding-top: 55px;
+        padding-top: 79px;
         gap: 50px;
         margin-bottom: 50px;
     }
     .ul-header {
         width: 100%;
         display: flex;
-        justify-content: center; 
+        justify-content:space-evenly; 
         margin: 0;
         padding: 0;
         gap: 13%;
@@ -528,8 +532,11 @@ min-width: 362.45px;
     }
     
   
-    
-    
+
+    .li-header{
+        font-size: 1.5em;
+
+    }
     #li-header-2::before{
         content: '';
         position: absolute;
@@ -539,21 +546,24 @@ min-width: 362.45px;
         height: 3px;
         background-color: #F2F2F2;
         transition: width 0.3s ease;
-        width: 600% ;
-        transform: translateX(-19%);
+        width:50% ;
+        transform: translateX(-38%);
+                margin-top: 30px;
+
     }
      
     #li-header-1::before{
         content: '';
-        position: absolute;
+        position: absolute ; 
         left: 0;
         right: 0; 
         top: 30px;
         height: 3px;
         background-color: #F2F2F2;
         transition: width 0.3s ease;
-        width: 635% ;
+        width: 50% ;
         transform: translateX(-71%);
+        margin-top: 30px;
     }
     #li-header-2:hover::before{
         background-color: #0065FC;
@@ -565,7 +575,6 @@ min-width: 362.45px;
 
 .li-header:first-child {
 
- margin-left: -20px;
 }
 .h2-Search{
     display: flex; 
@@ -581,7 +590,6 @@ justify-content: center;
 justify-content: center;
 }
 .p1-filters {
-    margin-left: 10px
 }
 .button-filters-container{
    max-width: 70%;
@@ -590,7 +598,6 @@ justify-content: center;
     justify-content: center;
     flex-wrap: wrap;
     min-width: 383px;
-    margin-left: 10%   ;
 }
 .button-filters{
     min-width: 20px;
@@ -659,5 +666,14 @@ height: 672px;
 .card-hebergements{
     height: 270.25px;
 }
-
+.activities-card-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 }
