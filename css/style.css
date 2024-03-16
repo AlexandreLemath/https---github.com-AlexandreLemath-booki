@@ -551,31 +551,17 @@ min-width: 362.45px;
                 margin-top: 30px;
 
     }
-     
-    #li-header-1::before{
-        content: '';
-        position: absolute ; 
-        left: 0;
-        right: 0; 
-        top: 30px;
-        height: 3px;
-        background-color: #F2F2F2;
-        transition: width 0.3s ease;
-        width: 50% ;
-        transform: translateX(-71%);
-        margin-top: 30px;
-    }
-    #li-header-2:hover::before{
-        background-color: #0065FC;
-    }
-    #li-header-1:hover::before{
-        background-color: #0065FC;
-    }
-
-
-.li-header:first-child {
-
+    .li-header::before {
+        display: none;
+    }  
+.ul-header li{
+    width: 50%;
+  display: block;
+  border-bottom: 6px solid var(--main-bg-color) ;
+  border-top: none;
+  padding-bottom: 30px;
 }
+
 .h2-Search{
     display: flex; 
     justify-content: center;
